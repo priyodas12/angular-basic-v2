@@ -1,2 +1,3 @@
 <p>{{title.toUpperCase()}}</p>
-<img [src]="imgUrl" />
+<input (keyup)="changeImage($event)" [value]="imgUrl" />
+<app-post [postImg]="imgUrl"></app-post>

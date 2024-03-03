@@ -1,0 +1,28 @@
+<div class="container">
+  <table class="table mt-5">
+    <thead>
+      <tr>
+        <th>Sequence</th>
+        <th>ProductId</th>
+        <th>ProductName</th>
+        <th>Sold Quantity</th>
+        <th>UnitInStock</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        *ngFor="let item of processors; let odd = odd"
+        [class.bg-primary]="odd"
+        [class.bg-warning]="!odd"
+      >
+        <td>{{ item.SerialNumber }}</td>
+        <td>{{ item.ProductId }}</td>
+        <td>{{ item.ProductName }}</td>
+        <td>{{ item.SoldUnits }}</td>
+        <td>{{ item.InStockUnit }}</td>
+        <td>{{ item.Cost }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

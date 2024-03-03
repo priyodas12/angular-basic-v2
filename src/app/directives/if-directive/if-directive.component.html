@@ -1,0 +1,18 @@
+<div
+  class="if-container text-muted"
+  *ngIf="data.loggedIn; then loggedIn; else loggedOut"
+></div>
+<ng-template #loggedOut>
+  <h3 class="bg-warning mt-2 p-2">You are successfully logged out!</h3>
+</ng-template>
+<ng-template #loggedIn>
+  <h3 class="bg-info mt-2 p-2">
+    Welcome {{ data.name }}, You have logged in from {{ data.countryCode }}
+  </h3>
+</ng-template>
+
+<ng-template [ngIf]="data.loggedIn" [ngIfElse]="loggedOut">
+  <h3 class="bg-info mt-2 p-2">
+    Welcome {{ data.name }}, You have logged in from {{ data.countryCode }}
+  </h3>
+</ng-template>

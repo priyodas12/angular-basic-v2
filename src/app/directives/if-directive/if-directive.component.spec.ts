@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PostComponent } from './post.component';
+import { IfDirectiveComponent } from './if-directive.component';
 
-describe('PostComponent', () => {
-  let component: PostComponent;
-  let fixture: ComponentFixture<PostComponent>;
+describe('IfDirectiveComponent', () => {
+  let component: IfDirectiveComponent;
+  let fixture: ComponentFixture<IfDirectiveComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PostComponent ]
+      declarations: [ IfDirectiveComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PostComponent);
+    fixture = TestBed.createComponent(IfDirectiveComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

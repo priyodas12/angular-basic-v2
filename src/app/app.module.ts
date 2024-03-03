@@ -3,12 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PostComponent } from './post/post.component';
+import { IfDirectiveComponent } from './directives/if-directive/if-directive.component';
+import { NgSwitchDirectiveComponent } from './directives/ng-switch-directive/ng-switch-directive.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostComponent
+    IfDirectiveComponent,
+    NgSwitchDirectiveComponent
   ],
   imports: [
     BrowserModule,

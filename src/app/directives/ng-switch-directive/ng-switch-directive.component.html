@@ -1,0 +1,23 @@
+<div *ngIf="data.loggedIn">
+  <div class="bg-info p-2 mt-1" [ngSwitch]="data.countryCode">
+    <div *ngSwitchCase="'IN'">
+      <h3>Currency: INR</h3>
+    </div>
+
+    <div *ngSwitchCase="'UK'">
+      <h3>Currency: EURO</h3>
+    </div>
+
+    <div *ngSwitchCase="'JP'">
+      <h3>Currency: YEAN</h3>
+    </div>
+
+    <div *ngSwitchCase="'BD'">
+      <h3>Currency: TAKA</h3>
+    </div>
+
+    <div *ngSwitchDefault>
+      <h3>Currency: USD</h3>
+    </div>
+  </div>
+</div>
